@@ -5,12 +5,8 @@ metadata:
   name: test
   namespace: fleet-local
 spec:
-  repo: https://github.com/axeal/fleet-test.git
-  #branch: "01886042"
+  repo: https://github.com/mandronic0/test-elemental/
   paths:
   - Elemental/CRDs
   - Elemental/Operator
-  targets:
-   # Match everything
-  - clusterSelector: {}
 ```
