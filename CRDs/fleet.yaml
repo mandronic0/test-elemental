@@ -1,13 +1,18 @@
 defaultNamespace: cattle-elemental-system
 name: elemental-crds
-helm:   
-  # chart: oci://registry.suse.com/rancher/elemental-operator-chart
-  repo: oci://registry.suse.com/rancher/elemental-operator-chart     
+
+helm:
+  repo: oci://registry.suse.com/rancher/elemental-operator-crds-chart
+  # chart: oci://registry.suse.com/rancher/elemental-operator-crds-chart
   releaseName: elemental-operator-crds
-  atomic: true
-  waitForJobs: true
-  timeoutSeconds: 300
-  takeOwnership: truerolloutStrategy:
-  maxUnavailable: 15%
-  maxNew: 50labels:
-  elemental: crds
+  atomic: true
+  waitForJobs: true
+  timeoutSeconds: 300
+  takeOwnership: true
+
+rolloutStrategy:
+  maxUnavailable: 15%
+  maxNew: 50
+
+labels:
+  elemental: crds
