@@ -1,5 +1,5 @@
 defaultNamespace: cattle-elemental-system
-name: elemental-crds
+# name: elemental-crds
 
 # Top-level Helm deployment settings
 releaseName: elemental-operator-crds
