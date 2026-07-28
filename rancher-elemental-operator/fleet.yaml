@@ -1,5 +1,5 @@
 defaultNamespace: cattle-elemental-system
-name: elemental-operator
+# name: elemental-operator
 
 # Top-level Helm deployment settings
 releaseName: elemental-operator
