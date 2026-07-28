@@ -1,14 +1,12 @@
 defaultNamespace: cattle-elemental-system
 # name: elemental-crds
 
-# Top-level Helm deployment settings
 releaseName: elemental-operator-crds
 atomic: true
 waitForJobs: true
 timeoutSeconds: 300
 takeOwnership: true
 
-# Chart location (providing chart ensures compatibility across Fleet versions)
 helm:
   repo: "oci://registry.suse.com/rancher/elemental-operator-crds-chart"
   # chart: oci://registry.suse.com/rancher/elemental-operator-crds-chart
