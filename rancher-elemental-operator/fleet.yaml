@@ -1,25 +1,18 @@
 defaultNamespace: cattle-elemental-system
 name: elemental-operator
 
+# Top-level Helm deployment settings
+releaseName: elemental-operator
+atomic: true
+waitForJobs: true
+timeoutSeconds: 300
+takeOwnership: true
 
+# Chart location
 helm:
-
   repo: oci://registry.suse.com/rancher/elemental-operator-chart
-
-  releaseName: elemental-operator
-
-  atomic: true
-
-  waitForJobs: true
-
-  timeoutSeconds: 300
-
-  takeOwnership: true
-
-
+  chart: oci://registry.suse.com/rancher/elemental-operator-chart
 
 rolloutStrategy:
-
   maxUnavailable: 15%
-
   maxNew: 50
