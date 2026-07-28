@@ -1,11 +1,6 @@
 defaultNamespace: cattle-elemental-system
 name: elemental-operator
 
-dependsOn:
-  - selector:
-      matchLabels:
-        elemental: crds
-
 helm:
   #repo: oci://registry.suse.com/rancher/elemental-operator-chart
   chart: oci://registry.suse.com/rancher/elemental-operator-chart
