@@ -10,7 +10,7 @@ takeOwnership: true
 
 # Chart location
 helm:
-  repo: oci://registry.suse.com/rancher/elemental-operator-chart
+#  repo: oci://registry.suse.com/rancher/elemental-operator-chart
   chart: oci://registry.suse.com/rancher/elemental-operator-chart
 
 rolloutStrategy:
