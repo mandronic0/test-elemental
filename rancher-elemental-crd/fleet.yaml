@@ -9,6 +9,7 @@ takeOwnership: true
 
 helm:
   repo: "oci://registry.suse.com/rancher/elemental-operator-crds-chart"
+  chart: elemental-operator-crds
   # chart: oci://registry.suse.com/rancher/elemental-operator-crds-chart
 
 rolloutStrategy:
