@@ -10,8 +10,8 @@ takeOwnership: true
 
 # Chart location (providing chart ensures compatibility across Fleet versions)
 helm:
-#  repo: oci://registry.suse.com/rancher/elemental-operator-crds-chart
-  chart: oci://registry.suse.com/rancher/elemental-operator-crds-chart
+  repo: oci://registry.suse.com/rancher/elemental-operator-crds-chart
+  # chart: oci://registry.suse.com/rancher/elemental-operator-crds-chart
 
 rolloutStrategy:
   maxUnavailable: 15%
