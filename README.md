@@ -6,7 +6,7 @@ metadata:
   namespace: fleet-local
 spec:
   repo: https://github.com/axeal/fleet-test.git
-  branch: "01886042"
+  #branch: "01886042"
   paths:
   - Elemental/CRDs
   - Elemental/Operator
