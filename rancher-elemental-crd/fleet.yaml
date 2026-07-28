@@ -8,7 +8,7 @@ timeoutSeconds: 300
 takeOwnership: true
 
 helm:
-  repo: "oci://registry.suse.com/rancher/elemental-operator-crds-chart"
+  repo: "oci://registry.suse.com/rancher"
   chart: elemental-operator-crds
   # chart: oci://registry.suse.com/rancher/elemental-operator-crds-chart
 
